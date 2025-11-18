@@ -1,0 +1,341 @@
+================================================================================
+KEC ROUTINE SCHEDULER - USER GUIDE
+================================================================================
+
+QUICK START GUIDE
+--------------------------------------------------------------------------------
+
+FIRST TIME SETUP (Building the Application)
+============================================
+
+Step 1: Build Backend
+---------------------
+1. Double-click: BUILD_BACKEND.bat
+2. Wait 3-5 minutes for the build to complete
+3. You should see: "SUCCESS: Backend executable created!"
+
+Step 2: Build Frontend
+----------------------
+1. Double-click: BUILD_FRONTEND.bat
+2. Wait 1-2 minutes for the build to complete
+3. You should see: "SUCCESS: Frontend built!"
+
+
+RUNNING THE APPLICATION
+========================
+
+Method 1: Start Everything (Easiest)
+-------------------------------------
+1. Double-click: START_APPLICATION.bat
+2. Two console windows will open automatically:
+   - Backend Server Window
+   - Frontend Server Window
+3. Your browser will open automatically to: http://localhost:3000
+4. Start using the application!
+
+Method 2: Start Separately
+---------------------------
+1. Double-click: START_BACKEND.bat (start this first)
+2. Double-click: START_FRONTEND.bat (start this second)
+3. Access the application at: http://localhost:3000
+
+
+IMPORTANT NOTES
+===============
+✓ Keep both console windows open while using the application
+✓ Do not close the console windows
+✓ Press Ctrl+C in console windows to stop servers
+✓ If you close browser tab, just open http://localhost:3000 again
+
+
+ACCESSING THE APPLICATION
+==========================
+Main Application:    http://localhost:3000
+Backend API:         http://localhost:8000
+API Documentation:   http://localhost:8000/docs
+
+
+FILES STRUCTURE
+===============
+After building, you will have:
+
+backend/dist/KEC_Routine_Backend/
+├── KEC_Routine_Backend.exe     ← Backend server executable
+├── kec_routine.db               ← Your database (all data stored here)
+└── _internal/                   ← Dependencies (don't modify)
+
+frontend/dist/
+├── index.html                   ← Main web page
+└── assets/                      ← JavaScript and CSS files
+
+
+DISTRIBUTING TO OTHERS
+=======================
+
+Option 1: Simple Package (Recommended)
+---------------------------------------
+1. Create a new folder: "KEC_Routine_Scheduler_Package"
+
+2. Copy these items into it:
+   ✓ backend/dist/KEC_Routine_Backend/ (entire folder)
+   ✓ frontend/dist/ (entire folder)
+
+3. Create START_BACKEND.bat in the package folder:
+   @echo off
+   echo Starting Backend Server...
+   cd KEC_Routine_Backend
+   KEC_Routine_Backend.exe
+   pause
+
+4. Create START_FRONTEND.bat in the package folder:
+   @echo off
+   echo Starting Frontend Server...
+   cd dist
+   timeout /t 3 /nobreak >nul
+   start http://localhost:3000
+   python -m http.server 3000
+   pause
+
+5. Create README.txt with instructions for users
+
+6. Compress the entire folder to ZIP
+
+7. Share the ZIP file
+
+Recipients should:
+✓ Extract the ZIP file
+✓ Run START_BACKEND.bat first
+✓ Run START_FRONTEND.bat second
+✓ Access http://localhost:3000
+
+
+Option 2: Complete Package with Build Scripts
+----------------------------------------------
+Simply compress your entire project folder and share it.
+Recipients can run BUILD_BACKEND.bat and BUILD_FRONTEND.bat themselves.
+
+
+SYSTEM REQUIREMENTS
+===================
+For Building:
+- Windows 10/11
+- Python 3.12 with virtual environment
+- Node.js and npm
+- 500 MB free disk space
+
+For Running (After Build):
+- Windows 10/11
+- Python (only for frontend server, or use alternative web server)
+- 200 MB free disk space
+
+For Distribution (Recipient Computers):
+- Windows 10/11
+- Python (for running http.server, or use nginx/apache/IIS)
+- No other dependencies needed!
+
+
+TROUBLESHOOTING
+===============
+
+Problem: Backend doesn't start
+-------------------------------
+Solution 1: Check if port 8000 is already in use
+   - Open Task Manager
+   - End any process using port 8000
+   - Try again
+
+Solution 2: Run manually
+   - Navigate to: backend\dist\KEC_Routine_Backend\
+   - Double-click: KEC_Routine_Backend.exe
+   - Check for error messages
+
+Solution 3: Check database file
+   - Ensure kec_routine.db exists in backend\dist\KEC_Routine_Backend\_internal\
+
+
+Problem: Frontend doesn't start
+--------------------------------
+Solution 1: Check if port 3000 is already in use
+   - Stop any other services on port 3000
+   - Try again
+
+Solution 2: Use different port
+   - Instead of: python -m http.server 3000
+   - Try: python -m http.server 5000
+   - Access: http://localhost:5000
+
+Solution 3: Use alternative web server
+   - Install: npm install -g serve
+   - Run: serve -s frontend/dist -p 3000
+
+
+Problem: Build fails
+---------------------
+Solution 1: Clean and rebuild
+   - Delete backend/build and backend/dist folders
+   - Delete frontend/dist folder
+   - Run BUILD_BACKEND.bat again
+   - Run BUILD_FRONTEND.bat again
+
+Solution 2: Check virtual environment
+   - Ensure backend/.venv exists
+   - Reinstall if needed:
+     cd backend
+     python -m venv .venv
+     .venv\Scripts\activate
+     pip install -r requirements.txt
+
+Solution 3: Check Node.js
+   - Ensure npm is installed: npm --version
+   - Reinstall dependencies:
+     cd frontend
+     npm install
+
+
+Problem: Database not found
+----------------------------
+Solution: The database should be auto-included during build
+   - Check: backend\dist\KEC_Routine_Backend\_internal\kec_routine.db
+   - If missing, manually copy:
+     From: backend\kec_routine.db
+     To: backend\dist\KEC_Routine_Backend\_internal\kec_routine.db
+
+
+Problem: Application works locally but not on other computers
+--------------------------------------------------------------
+Solution 1: Ensure Python is installed on target computer
+   - Download from: https://www.python.org/downloads/
+   - Install with "Add Python to PATH" option
+
+Solution 2: Use standalone web server for frontend
+   - Package with nginx or apache
+   - Configure to serve frontend/dist folder
+
+Solution 3: Check Windows Firewall
+   - Allow Python through Windows Firewall
+   - Or disable firewall for localhost connections
+
+
+FEATURES INCLUDED
+=================
+✓ Complete teacher database with recruitment types (Full Time/Part Time)
+✓ Finance module with position rates
+✓ Effective load management per teacher
+✓ Teacher Load Report with:
+  - Department filter
+  - Recruitment filter (Full Time/Part Time)
+  - Extra Load calculation (Workload - Effective Load)
+  - Total Payment calculation (Extra Load × Position Rate)
+✓ Excel export with all financial data
+✓ Class routine scheduling
+✓ Teacher routine viewing
+✓ Complete schedule management
+✓ All data stored in portable SQLite database
+
+
+DATA BACKUP
+===========
+Your data is stored in: kec_routine.db
+
+To backup:
+1. Locate: backend\dist\KEC_Routine_Backend\_internal\kec_routine.db
+2. Copy this file to a safe location
+3. Label with date: kec_routine_backup_2025-10-27.db
+
+To restore:
+1. Stop the backend server
+2. Replace kec_routine.db with your backup file
+3. Restart the backend server
+
+
+UPDATING THE APPLICATION
+=========================
+If you make changes to code:
+
+1. Rebuild affected component:
+   - Backend changes: Run BUILD_BACKEND.bat
+   - Frontend changes: Run BUILD_FRONTEND.bat
+
+2. Database changes persist automatically
+   - No need to rebuild for data changes
+   - Only code changes require rebuild
+
+
+ADVANCED CONFIGURATION
+======================
+
+Change Backend Port:
+- Edit: backend/app/core/config.py
+- Modify PORT setting
+- Rebuild backend
+
+Change Frontend Port:
+- Edit: START_FRONTEND.bat
+- Change: python -m http.server 3000
+- To: python -m http.server YOUR_PORT
+
+Custom Database Location:
+- Edit: backend/app/core/config.py
+- Update DATABASE_URL
+- Rebuild backend
+
+
+SUPPORT AND MAINTENANCE
+========================
+Build Scripts Created:
+- BUILD_BACKEND.bat         (Build backend executable)
+- BUILD_FRONTEND.bat        (Build frontend bundle)
+- START_BACKEND.bat         (Start backend server)
+- START_FRONTEND.bat        (Start frontend server)
+- START_APPLICATION.bat     (Start both servers)
+
+Documentation:
+- BUILD_INSTRUCTIONS.txt    (This file)
+- README.md                 (Project documentation)
+
+Typical Build Time: 5-7 minutes total
+Backend Size: ~50-80 MB
+Frontend Size: ~2 MB
+Total Package Size: ~55-85 MB
+
+
+PERFORMANCE TIPS
+================
+✓ Keep database file size reasonable (backup and archive old data)
+✓ Close unused browser tabs to reduce memory usage
+✓ Restart servers weekly for optimal performance
+✓ Monitor console windows for error messages
+
+
+SECURITY NOTES
+==============
+⚠️ This application runs on localhost (127.0.0.1) only
+⚠️ Not configured for internet-facing deployment
+⚠️ Database has no password protection
+⚠️ Suitable for local/LAN use only
+
+For production deployment:
+- Add authentication
+- Use HTTPS
+- Configure proper CORS
+- Set up production database
+- Use proper web server (nginx/apache)
+
+
+CREDITS
+=======
+KEC Routine Scheduler
+Version: 1.0
+Backend: Python + FastAPI
+Frontend: React + Vite + Material-UI
+Database: SQLite
+
+Features:
+- Routine scheduling and management
+- Teacher workload tracking
+- Financial calculations
+- Excel export functionality
+
+================================================================================
+For additional support or questions, refer to the project documentation.
+================================================================================

@@ -1,0 +1,131 @@
+================================================================================
+KEC ROUTINE SCHEDULER - BUILD INSTRUCTIONS
+================================================================================
+
+STEP-BY-STEP GUIDE TO CREATE WINDOWS EXECUTABLES
+--------------------------------------------------------------------------------
+
+OPTION 1: BUILD EVERYTHING (RECOMMENDED)
+----------------------------------------
+1. Double-click: BUILD_BACKEND.bat
+   - Wait for it to complete (3-5 minutes)
+   - You should see "SUCCESS: Backend executable created!"
+
+2. Double-click: BUILD_FRONTEND.bat
+   - Wait for it to complete (1-2 minutes)
+   - You should see "SUCCESS: Frontend built!"
+
+3. Double-click: START_APPLICATION.bat
+   - This will start both servers automatically
+   - Browser will open at http://localhost:3000
+
+
+OPTION 2: BUILD ONE AT A TIME
+------------------------------
+Backend Only:
+   1. Run: BUILD_BACKEND.bat
+   2. Run: START_BACKEND.bat (to test)
+
+Frontend Only:
+   1. Run: BUILD_FRONTEND.bat
+   2. Run: START_FRONTEND.bat (to test)
+
+
+WHAT GETS CREATED
+-----------------
+After building:
+
+backend/dist/KEC_Routine_Backend/
+   ├── KEC_Routine_Backend.exe  (Main backend executable)
+   ├── kec_routine.db            (Database with all data)
+   └── _internal/                (Python dependencies)
+
+frontend/dist/
+   ├── index.html                (Main page)
+   └── assets/                   (JS/CSS files)
+
+
+DISTRIBUTION TO OTHER COMPUTERS
+--------------------------------
+To share the application with others:
+
+1. Create a folder named "KEC_Routine_Scheduler"
+
+2. Copy these folders into it:
+   - backend/dist/KEC_Routine_Backend/  (entire folder)
+   - frontend/dist/                     (entire folder)
+
+3. Create two .bat files in the main folder:
+
+   START_BACKEND.bat:
+   -------------------
+   @echo off
+   cd KEC_Routine_Backend
+   KEC_Routine_Backend.exe
+   pause
+
+   START_FRONTEND.bat:
+   -------------------
+   @echo off
+   cd dist
+   start http://localhost:3000
+   python -m http.server 3000
+   pause
+
+4. Compress to ZIP and share
+
+5. Users should:
+   - Extract the ZIP
+   - Run START_BACKEND.bat first
+   - Run START_FRONTEND.bat second
+   - Access http://localhost:3000
+
+
+REQUIREMENTS FOR OTHER COMPUTERS
+---------------------------------
+- Windows 10/11
+- Python installed (for frontend server)
+  OR use any other web server to serve the frontend/dist folder
+
+
+TROUBLESHOOTING
+---------------
+Problem: "PyInstaller not found"
+Solution: The script auto-installs it, but if it fails:
+          cd backend
+          .venv\Scripts\activate
+          pip install pyinstaller
+
+Problem: "npm: command not found"
+Solution: Make sure Node.js is installed
+
+Problem: Backend fails to start
+Solution: Check if port 8000 is already in use
+          Or run from: backend\dist\KEC_Routine_Backend\
+
+Problem: Frontend fails to start
+Solution: Check if port 3000 is already in use
+          Or use a different port: python -m http.server 5000
+
+
+TECHNICAL DETAILS
+-----------------
+Backend Size: ~50-80 MB (includes Python runtime + dependencies)
+Frontend Size: ~2 MB (production-optimized bundle)
+Database: Included in backend executable folder
+
+Build Time:
+  - Backend: 3-5 minutes
+  - Frontend: 1-2 minutes
+  - Total: ~5-7 minutes
+
+
+SUPPORT
+-------
+If you encounter issues:
+1. Check all files are present
+2. Ensure virtual environment is activated for backend
+3. Verify Node.js and Python are installed
+4. Check no other services are using ports 8000/3000
+
+================================================================================
