@@ -375,6 +375,14 @@ export default function ClassRoutine() {
       await classRoutineService.save(formData.class_id, entries, formData.room_no)
       console.log('Auto-save successful')
       
+      // Auto-update static deployment after successful save
+      try {
+        await updateStaticDeployment()
+      } catch (deployError) {
+        console.warn('Failed to update static deployment:', deployError)
+        // Don't fail the auto-save operation if deployment update fails
+      }
+      
       // Show subtle success indicator
       setSnackbar({
         open: true,
@@ -388,6 +396,101 @@ export default function ClassRoutine() {
         message: 'Auto-save failed',
         severity: 'error',
       })
+    }
+  }
+
+  // Update static deployment with latest data
+  const updateStaticDeployment = async () => {
+    try {
+      // Fetch all necessary data
+      const [classesRes, subjectsRes, teachersRes, routinesRes, daysRes, periodsRes, programmesRes, semestersRes] = await Promise.all([
+        classService.getAll(),
+        subjectService.getAll(),
+        teacherService.getAll(),
+        classRoutineService.getAll(),
+        dayService.getAll(),
+        periodService.getAll(),
+        programmeService.getAll(),
+        semesterService.getAll(),
+      ])
+
+      const classesData = classesRes.data || []
+      const programmesData = programmesRes.data || []
+      const semestersData = semestersRes.data || []
+
+      // Enrich classes with programme and semester names
+      const enrichedClasses = classesData.map(cls => {
+        const semester = semestersData.find(s => s.id === cls.semester_id)
+        const programme = programmesData.find(p => p.id === semester?.programme_id)
+        return {
+          ...cls,
+          programme_id: semester?.programme_id || null,
+          programme_name: programme?.name || programme?.code || '',
+          programme_code: programme?.code || '',
+          semester_name: semester?.name || '',
+        }
+      })
+
+      // Group multi-subject labs by lab_group_id
+      const rawRoutines = routinesRes.data || []
+      const labGroups = {}
+      const groupedRoutines = []
+      const processedLabGroups = new Set()
+
+      rawRoutines.forEach(routine => {
+        if (routine.lab_group_id) {
+          // This is part of a multi-subject lab
+          if (!labGroups[routine.lab_group_id]) {
+            labGroups[routine.lab_group_id] = {
+              ...routine,
+              lab_subjects: []
+            }
+          }
+          labGroups[routine.lab_group_id].lab_subjects.push({
+            subject_id: routine.subject_id,
+            subject_name: routine.subject_name,
+            lead_teacher_id: routine.lead_teacher_id,
+            assist_teacher_1_id: routine.assist_teacher_1_id,
+            assist_teacher_2_id: routine.assist_teacher_2_id,
+            group: routine.group,
+            lab_room: routine.lab_room,
+            is_half_lab: routine.is_half_lab,
+            num_periods: routine.num_periods,
+          })
+        }
+      })
+
+      // Now create the final routines array
+      rawRoutines.forEach(routine => {
+        if (routine.lab_group_id) {
+          // Add grouped lab only once
+          if (!processedLabGroups.has(routine.lab_group_id)) {
+            groupedRoutines.push(labGroups[routine.lab_group_id])
+            processedLabGroups.add(routine.lab_group_id)
+          }
+        } else {
+          // Regular routine (not a multi-subject lab)
+          groupedRoutines.push(routine)
+        }
+      })
+
+      const deployData = {
+        classes: enrichedClasses,
+        subjects: subjectsRes.data || [],
+        teachers: teachersRes.data || [],
+        routines: groupedRoutines,
+        days: daysRes.data || [],
+        periods: periodsRes.data || [],
+        programmes: programmesData,
+        semesters: semestersData,
+      }
+
+      // Send to backend to update static page
+      await api.post('/deploy/static-page', deployData)
+      console.log('Static deployment updated automatically')
+    } catch (error) {
+      console.error('Error updating static deployment:', error)
+      throw error
     }
   }
 
@@ -643,6 +746,14 @@ export default function ClassRoutine() {
       console.log('Sending room_no:', formData.room_no)
       const response = await classRoutineService.save(formData.class_id, entries, formData.room_no)
       console.log('Save response:', response)
+      
+      // Auto-update static deployment after successful save
+      try {
+        await updateStaticDeployment()
+      } catch (deployError) {
+        console.warn('Failed to update static deployment:', deployError)
+        // Don't fail the save operation if deployment update fails
+      }
       
       setSnackbar({
         open: true,

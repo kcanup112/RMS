@@ -81,7 +81,7 @@
  [],
  False,
  False,
- 1763265607,
+ 1763821380,
  [('run.exe',
    'C:\\Users\\Anup kc\\Downloads\\KEC Routine Scheduler Single Shift '
    'Edited\\kecRoutine\\kec-routine-scheduler\\backend\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',

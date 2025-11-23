@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from typing import List, Dict, Any
 import json
 import os
+import sys
 
 router = APIRouter()
 
@@ -19,14 +20,27 @@ class DeployData(BaseModel):
 @router.post("/static-page")
 async def deploy_static_page(data: DeployData):
     try:
-        # Create deploy directory if it doesn't exist
-        deploy_dir = os.path.join(os.path.dirname(__file__), '../../../deploy')
+        # Get the backend root directory (where run.py is located)
+        # This works for both development and built executable
+        if getattr(sys, 'frozen', False):
+            # Running as compiled executable
+            backend_root = os.path.dirname(sys.executable)
+        else:
+            # Running as script - go up from app/api/routes to backend root
+            backend_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..'))
+        
+        # Create deploy directory in backend root
+        deploy_dir = os.path.join(backend_root, 'deploy')
         os.makedirs(deploy_dir, exist_ok=True)
+        
+        print(f"Deploying to: {deploy_dir}")
         
         # Save data as JSON for the static server
         data_file = os.path.join(deploy_dir, 'routine_data.json')
         with open(data_file, 'w') as f:
             json.dump(data.dict(), f, indent=2, default=str)
+        
+        print(f"Data saved to: {data_file}")
         
         # Create the HTML file
         html_content = generate_html_page()
@@ -34,12 +48,16 @@ async def deploy_static_page(data: DeployData):
         with open(html_file, 'w', encoding='utf-8') as f:
             f.write(html_content)
         
+        print(f"HTML saved to: {html_file}")
+        
         return {
             "success": True,
             "message": "Static page deployed successfully",
-            "url": "http://localhost:3001"
+            "url": "http://localhost:3001",
+            "deploy_path": deploy_dir
         }
     except Exception as e:
+        print(f"Deployment error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 def generate_html_page():
