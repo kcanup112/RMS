@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.database import engine, Base
-from app.api.routes import departments, teachers, subjects, schedules, programmes, semesters, semester_subjects, classes, rooms, days, periods, teacher_subjects, class_routines, finance, deploy
+from app.api.routes import departments, teachers, subjects, schedules, programmes, semesters, semester_subjects, classes, rooms, days, periods, teacher_subjects, class_routines, finance, deploy, auth, users
 
 # Create database tables
 Base.metadata.create_all(bind=engine)
@@ -29,6 +29,8 @@ app.add_middleware(
 )
 
 # Include routers
+app.include_router(auth.router, prefix="/api")
+app.include_router(users.router, prefix="/api")
 app.include_router(departments.router, prefix="/api")
 app.include_router(programmes.router, prefix="/api")
 app.include_router(semesters.router, prefix="/api")

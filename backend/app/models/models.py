@@ -1,5 +1,6 @@
-from sqlalchemy import Column, Integer, String, Boolean, ForeignKey, Time, Float
+from sqlalchemy import Column, Integer, String, Boolean, ForeignKey, Time, Float, DateTime
 from sqlalchemy.orm import relationship
+from datetime import datetime
 from app.core.database import Base
 
 class Department(Base):
@@ -201,3 +202,21 @@ class TeacherEffectiveLoad(Base):
     position = Column(String, nullable=True)
     
     teacher = relationship("Teacher")
+
+
+class User(Base):
+    """User authentication and authorization model"""
+    __tablename__ = "users"
+    
+    id = Column(Integer, primary_key=True, index=True)
+    email = Column(String(255), unique=True, nullable=False, index=True)
+    password_hash = Column(String(255), nullable=False)
+    full_name = Column(String(255), nullable=False)
+    role = Column(String(20), nullable=False)  # 'superadmin', 'admin', 'teacher'
+    is_active = Column(Boolean, default=True, nullable=False)
+    teacher_id = Column(Integer, ForeignKey("teachers.id"), nullable=True)
+    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow, nullable=False)
+    last_login = Column(DateTime, nullable=True)
+    
+    teacher = relationship("Teacher", foreign_keys=[teacher_id])

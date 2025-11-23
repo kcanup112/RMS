@@ -9928,1095 +9928,6 @@
       }
     },
     {
-      "id": 18892,
-      "day_id": 4,
-      "period_id": 1,
-      "class_id": 1,
-      "subject_id": 41,
-      "is_lab": true,
-      "is_half_lab": false,
-      "num_periods": 4,
-      "lead_teacher_id": 76,
-      "assist_teacher_1_id": 49,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": "Z",
-      "lab_room": "A-103",
-      "lab_group_id": "lab-4-1-1762750898929",
-      "subject": {
-        "id": 41,
-        "name": "Engineering Drawing ",
-        "code": "ENME101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      },
-      "lab_subjects": [
-        {
-          "subject_id": 41,
-          "lead_teacher_id": 76,
-          "assist_teacher_1_id": 49,
-          "assist_teacher_2_id": null,
-          "group": "Z",
-          "lab_room": "A-103",
-          "is_half_lab": false,
-          "num_periods": 4
-        },
-        {
-          "subject_id": 52,
-          "lead_teacher_id": 39,
-          "assist_teacher_1_id": 47,
-          "assist_teacher_2_id": null,
-          "group": "Z",
-          "lab_room": "ELEX-I",
-          "is_half_lab": false,
-          "num_periods": 4
-        }
-      ]
-    },
-    {
-      "id": 18894,
-      "day_id": 1,
-      "period_id": 1,
-      "class_id": 1,
-      "subject_id": 107,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 2,
-      "lead_teacher_id": 19,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 107,
-        "name": "Engineering Mathematics I",
-        "code": "ENSH101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18895,
-      "day_id": 1,
-      "period_id": 3,
-      "class_id": 1,
-      "subject_id": 133,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": 49,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 133,
-        "name": "Engineering Workshop",
-        "code": "ENME106"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18896,
-      "day_id": 1,
-      "period_id": 4,
-      "class_id": 1,
-      "subject_id": "BREAK",
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": null,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": null,
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18897,
-      "day_id": 1,
-      "period_id": 5,
-      "class_id": 1,
-      "subject_id": 52,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 2,
-      "lead_teacher_id": 47,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 52,
-        "name": "Fundamentals of Electrical and Electronics Engineering",
-        "code": "ENEX101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18898,
-      "day_id": 1,
-      "period_id": 7,
-      "class_id": 1,
-      "subject_id": "BREAK",
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": null,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": null,
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18899,
-      "day_id": 1,
-      "period_id": 8,
-      "class_id": 1,
-      "subject_id": 47,
-      "is_lab": true,
-      "is_half_lab": false,
-      "num_periods": 3,
-      "lead_teacher_id": 52,
-      "assist_teacher_1_id": 53,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": "Z",
-      "lab_room": "A-101",
-      "lab_group_id": "lab-1-8-1762233154811",
-      "subject": {
-        "id": 47,
-        "name": "Engineering Physics",
-        "code": "ENSH102"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      },
-      "lab_subjects": [
-        {
-          "subject_id": 47,
-          "lead_teacher_id": 52,
-          "assist_teacher_1_id": 53,
-          "assist_teacher_2_id": null,
-          "group": "Z",
-          "lab_room": "A-101",
-          "is_half_lab": false,
-          "num_periods": 3
-        },
-        {
-          "subject_id": 133,
-          "lead_teacher_id": 49,
-          "assist_teacher_1_id": null,
-          "assist_teacher_2_id": null,
-          "group": "Y",
-          "lab_room": "A-105",
-          "is_half_lab": false,
-          "num_periods": 3
-        }
-      ]
-    },
-    {
-      "id": 18901,
-      "day_id": 2,
-      "period_id": 1,
-      "class_id": 1,
-      "subject_id": 47,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 2,
-      "lead_teacher_id": 77,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 47,
-        "name": "Engineering Physics",
-        "code": "ENSH102"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18902,
-      "day_id": 2,
-      "period_id": 3,
-      "class_id": 1,
-      "subject_id": 107,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": 19,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 107,
-        "name": "Engineering Mathematics I",
-        "code": "ENSH101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18903,
-      "day_id": 2,
-      "period_id": 4,
-      "class_id": 1,
-      "subject_id": "BREAK",
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": null,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": null,
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18904,
-      "day_id": 2,
-      "period_id": 5,
-      "class_id": 1,
-      "subject_id": 47,
-      "is_lab": true,
-      "is_half_lab": false,
-      "num_periods": 3,
-      "lead_teacher_id": 52,
-      "assist_teacher_1_id": 53,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": "Y",
-      "lab_room": "A-101",
-      "lab_group_id": "lab-2-5-1762233126147",
-      "subject": {
-        "id": 47,
-        "name": "Engineering Physics",
-        "code": "ENSH102"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      },
-      "lab_subjects": [
-        {
-          "subject_id": 47,
-          "lead_teacher_id": 52,
-          "assist_teacher_1_id": 53,
-          "assist_teacher_2_id": null,
-          "group": "Y",
-          "lab_room": "A-101",
-          "is_half_lab": false,
-          "num_periods": 3
-        },
-        {
-          "subject_id": 133,
-          "lead_teacher_id": 49,
-          "assist_teacher_1_id": null,
-          "assist_teacher_2_id": null,
-          "group": "Z",
-          "lab_room": "A-105",
-          "is_half_lab": false,
-          "num_periods": 3
-        }
-      ]
-    },
-    {
-      "id": 18906,
-      "day_id": 2,
-      "period_id": 8,
-      "class_id": 1,
-      "subject_id": 47,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": 52,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 47,
-        "name": "Engineering Physics",
-        "code": "ENSH102"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18907,
-      "day_id": 2,
-      "period_id": 9,
-      "class_id": 1,
-      "subject_id": 41,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 2,
-      "lead_teacher_id": 56,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 41,
-        "name": "Engineering Drawing ",
-        "code": "ENME101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18908,
-      "day_id": 3,
-      "period_id": 1,
-      "class_id": 1,
-      "subject_id": 109,
-      "is_lab": true,
-      "is_half_lab": false,
-      "num_periods": 3,
-      "lead_teacher_id": 31,
-      "assist_teacher_1_id": 46,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": "Y",
-      "lab_room": "COMP-I",
-      "lab_group_id": "lab-3-1-1762660075755",
-      "subject": {
-        "id": 109,
-        "name": "Computer Programming ",
-        "code": "ENCT101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      },
-      "lab_subjects": [
-        {
-          "subject_id": 109,
-          "lead_teacher_id": 31,
-          "assist_teacher_1_id": 46,
-          "assist_teacher_2_id": null,
-          "group": "Y",
-          "lab_room": "COMP-I",
-          "is_half_lab": false,
-          "num_periods": 3
-        },
-        {
-          "subject_id": 52,
-          "lead_teacher_id": 39,
-          "assist_teacher_1_id": 47,
-          "assist_teacher_2_id": null,
-          "group": "Z",
-          "lab_room": "ELEX-I",
-          "is_half_lab": false,
-          "num_periods": 3
-        }
-      ]
-    },
-    {
-      "id": 18910,
-      "day_id": 3,
-      "period_id": 4,
-      "class_id": 1,
-      "subject_id": "BREAK",
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": null,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": null,
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18911,
-      "day_id": 3,
-      "period_id": 5,
-      "class_id": 1,
-      "subject_id": 52,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 2,
-      "lead_teacher_id": 39,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 52,
-        "name": "Fundamentals of Electrical and Electronics Engineering",
-        "code": "ENEX101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18912,
-      "day_id": 3,
-      "period_id": 7,
-      "class_id": 1,
-      "subject_id": "BREAK",
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": null,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": null,
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18913,
-      "day_id": 3,
-      "period_id": 8,
-      "class_id": 1,
-      "subject_id": 47,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 2,
-      "lead_teacher_id": 53,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 47,
-        "name": "Engineering Physics",
-        "code": "ENSH102"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18914,
-      "day_id": 3,
-      "period_id": 10,
-      "class_id": 1,
-      "subject_id": "LC",
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": null,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": null,
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18915,
-      "day_id": 4,
-      "period_id": 5,
-      "class_id": 1,
-      "subject_id": "BREAK",
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": null,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": null,
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18916,
-      "day_id": 4,
-      "period_id": 6,
-      "class_id": 1,
-      "subject_id": 47,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": 52,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 47,
-        "name": "Engineering Physics",
-        "code": "ENSH102"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18917,
-      "day_id": 4,
-      "period_id": 7,
-      "class_id": 1,
-      "subject_id": 107,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": 19,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 107,
-        "name": "Engineering Mathematics I",
-        "code": "ENSH101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18918,
-      "day_id": 4,
-      "period_id": 8,
-      "class_id": 1,
-      "subject_id": "BREAK",
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": null,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": null,
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18919,
-      "day_id": 4,
-      "period_id": 9,
-      "class_id": 1,
-      "subject_id": 109,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 2,
-      "lead_teacher_id": 31,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 109,
-        "name": "Computer Programming ",
-        "code": "ENCT101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18920,
-      "day_id": 5,
-      "period_id": 1,
-      "class_id": 1,
-      "subject_id": 107,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 2,
-      "lead_teacher_id": 51,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 107,
-        "name": "Engineering Mathematics I",
-        "code": "ENSH101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18921,
-      "day_id": 5,
-      "period_id": 3,
-      "class_id": 1,
-      "subject_id": 109,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 2,
-      "lead_teacher_id": 31,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 109,
-        "name": "Computer Programming ",
-        "code": "ENCT101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18922,
-      "day_id": 5,
-      "period_id": 5,
-      "class_id": 1,
-      "subject_id": "BREAK",
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": null,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": null,
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18923,
-      "day_id": 5,
-      "period_id": 6,
-      "class_id": 1,
-      "subject_id": 52,
-      "is_lab": false,
-      "is_half_lab": false,
-      "num_periods": 1,
-      "lead_teacher_id": 39,
-      "assist_teacher_1_id": null,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": null,
-      "lab_room": null,
-      "lab_group_id": null,
-      "subject": {
-        "id": 52,
-        "name": "Fundamentals of Electrical and Electronics Engineering",
-        "code": "ENEX101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      }
-    },
-    {
-      "id": 18924,
-      "day_id": 5,
-      "period_id": 7,
-      "class_id": 1,
-      "subject_id": 109,
-      "is_lab": true,
-      "is_half_lab": false,
-      "num_periods": 4,
-      "lead_teacher_id": 31,
-      "assist_teacher_1_id": 81,
-      "assist_teacher_2_id": null,
-      "assist_teacher_3_id": null,
-      "group": "Z",
-      "lab_room": "COMP-IV",
-      "lab_group_id": "lab-5-7-1762741783834",
-      "subject": {
-        "id": 109,
-        "name": "Computer Programming ",
-        "code": "ENCT101"
-      },
-      "class": {
-        "id": 1,
-        "name": "BCT-A I/I ",
-        "section": "A",
-        "room_no": "A-101",
-        "programme": {
-          "code": "BCT",
-          "name": "Computer Engineering "
-        },
-        "semester": {
-          "name": "BCT I/I"
-        }
-      },
-      "lab_subjects": [
-        {
-          "subject_id": 109,
-          "lead_teacher_id": 31,
-          "assist_teacher_1_id": 81,
-          "assist_teacher_2_id": null,
-          "group": "Z",
-          "lab_room": "COMP-IV",
-          "is_half_lab": false,
-          "num_periods": 4
-        },
-        {
-          "subject_id": 41,
-          "lead_teacher_id": 49,
-          "assist_teacher_1_id": 56,
-          "assist_teacher_2_id": null,
-          "group": "Y",
-          "lab_room": "A-103",
-          "is_half_lab": false,
-          "num_periods": 4
-        }
-      ]
-    },
-    {
       "id": 19329,
       "day_id": 1,
       "period_id": 8,
@@ -18699,6 +17610,1095 @@
         },
         "semester": {
           "name": "BCT II/I"
+        }
+      }
+    },
+    {
+      "id": 19556,
+      "day_id": 4,
+      "period_id": 1,
+      "class_id": 1,
+      "subject_id": 41,
+      "is_lab": true,
+      "is_half_lab": false,
+      "num_periods": 4,
+      "lead_teacher_id": 76,
+      "assist_teacher_1_id": 49,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": "Z",
+      "lab_room": "A-103",
+      "lab_group_id": "lab-4-1-1762750898929",
+      "subject": {
+        "id": 41,
+        "name": "Engineering Drawing ",
+        "code": "ENME101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      },
+      "lab_subjects": [
+        {
+          "subject_id": 41,
+          "lead_teacher_id": 76,
+          "assist_teacher_1_id": 49,
+          "assist_teacher_2_id": null,
+          "group": "Z",
+          "lab_room": "A-103",
+          "is_half_lab": false,
+          "num_periods": 4
+        },
+        {
+          "subject_id": 52,
+          "lead_teacher_id": 39,
+          "assist_teacher_1_id": 47,
+          "assist_teacher_2_id": null,
+          "group": "Z",
+          "lab_room": "ELEX-I",
+          "is_half_lab": false,
+          "num_periods": 4
+        }
+      ]
+    },
+    {
+      "id": 19558,
+      "day_id": 1,
+      "period_id": 1,
+      "class_id": 1,
+      "subject_id": 107,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 2,
+      "lead_teacher_id": 19,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 107,
+        "name": "Engineering Mathematics I",
+        "code": "ENSH101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19559,
+      "day_id": 1,
+      "period_id": 3,
+      "class_id": 1,
+      "subject_id": 133,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": 49,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 133,
+        "name": "Engineering Workshop",
+        "code": "ENME106"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19560,
+      "day_id": 1,
+      "period_id": 5,
+      "class_id": 1,
+      "subject_id": 52,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 2,
+      "lead_teacher_id": 47,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 52,
+        "name": "Fundamentals of Electrical and Electronics Engineering",
+        "code": "ENEX101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19561,
+      "day_id": 1,
+      "period_id": 7,
+      "class_id": 1,
+      "subject_id": "BREAK",
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": null,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": null,
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19562,
+      "day_id": 1,
+      "period_id": 8,
+      "class_id": 1,
+      "subject_id": 47,
+      "is_lab": true,
+      "is_half_lab": false,
+      "num_periods": 3,
+      "lead_teacher_id": 52,
+      "assist_teacher_1_id": 53,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": "Z",
+      "lab_room": "A-101",
+      "lab_group_id": "lab-1-8-1762233154811",
+      "subject": {
+        "id": 47,
+        "name": "Engineering Physics",
+        "code": "ENSH102"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      },
+      "lab_subjects": [
+        {
+          "subject_id": 47,
+          "lead_teacher_id": 52,
+          "assist_teacher_1_id": 53,
+          "assist_teacher_2_id": null,
+          "group": "Z",
+          "lab_room": "A-101",
+          "is_half_lab": false,
+          "num_periods": 3
+        },
+        {
+          "subject_id": 133,
+          "lead_teacher_id": 49,
+          "assist_teacher_1_id": null,
+          "assist_teacher_2_id": null,
+          "group": "Y",
+          "lab_room": "A-105",
+          "is_half_lab": false,
+          "num_periods": 3
+        }
+      ]
+    },
+    {
+      "id": 19564,
+      "day_id": 2,
+      "period_id": 1,
+      "class_id": 1,
+      "subject_id": 47,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 2,
+      "lead_teacher_id": 77,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 47,
+        "name": "Engineering Physics",
+        "code": "ENSH102"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19565,
+      "day_id": 2,
+      "period_id": 3,
+      "class_id": 1,
+      "subject_id": 107,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": 19,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 107,
+        "name": "Engineering Mathematics I",
+        "code": "ENSH101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19566,
+      "day_id": 2,
+      "period_id": 4,
+      "class_id": 1,
+      "subject_id": "BREAK",
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": null,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": null,
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19567,
+      "day_id": 2,
+      "period_id": 5,
+      "class_id": 1,
+      "subject_id": 47,
+      "is_lab": true,
+      "is_half_lab": false,
+      "num_periods": 3,
+      "lead_teacher_id": 52,
+      "assist_teacher_1_id": 53,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": "Y",
+      "lab_room": "A-101",
+      "lab_group_id": "lab-2-5-1762233126147",
+      "subject": {
+        "id": 47,
+        "name": "Engineering Physics",
+        "code": "ENSH102"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      },
+      "lab_subjects": [
+        {
+          "subject_id": 47,
+          "lead_teacher_id": 52,
+          "assist_teacher_1_id": 53,
+          "assist_teacher_2_id": null,
+          "group": "Y",
+          "lab_room": "A-101",
+          "is_half_lab": false,
+          "num_periods": 3
+        },
+        {
+          "subject_id": 133,
+          "lead_teacher_id": 49,
+          "assist_teacher_1_id": null,
+          "assist_teacher_2_id": null,
+          "group": "Z",
+          "lab_room": "A-105",
+          "is_half_lab": false,
+          "num_periods": 3
+        }
+      ]
+    },
+    {
+      "id": 19569,
+      "day_id": 2,
+      "period_id": 8,
+      "class_id": 1,
+      "subject_id": 47,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": 52,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 47,
+        "name": "Engineering Physics",
+        "code": "ENSH102"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19570,
+      "day_id": 2,
+      "period_id": 9,
+      "class_id": 1,
+      "subject_id": 41,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 2,
+      "lead_teacher_id": 56,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 41,
+        "name": "Engineering Drawing ",
+        "code": "ENME101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19571,
+      "day_id": 3,
+      "period_id": 1,
+      "class_id": 1,
+      "subject_id": 109,
+      "is_lab": true,
+      "is_half_lab": false,
+      "num_periods": 3,
+      "lead_teacher_id": 31,
+      "assist_teacher_1_id": 46,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": "Y",
+      "lab_room": "COMP-I",
+      "lab_group_id": "lab-3-1-1762660075755",
+      "subject": {
+        "id": 109,
+        "name": "Computer Programming ",
+        "code": "ENCT101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      },
+      "lab_subjects": [
+        {
+          "subject_id": 109,
+          "lead_teacher_id": 31,
+          "assist_teacher_1_id": 46,
+          "assist_teacher_2_id": null,
+          "group": "Y",
+          "lab_room": "COMP-I",
+          "is_half_lab": false,
+          "num_periods": 3
+        },
+        {
+          "subject_id": 52,
+          "lead_teacher_id": 39,
+          "assist_teacher_1_id": 47,
+          "assist_teacher_2_id": null,
+          "group": "Z",
+          "lab_room": "ELEX-I",
+          "is_half_lab": false,
+          "num_periods": 3
+        }
+      ]
+    },
+    {
+      "id": 19573,
+      "day_id": 3,
+      "period_id": 4,
+      "class_id": 1,
+      "subject_id": "BREAK",
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": null,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": null,
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19574,
+      "day_id": 3,
+      "period_id": 5,
+      "class_id": 1,
+      "subject_id": 52,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 2,
+      "lead_teacher_id": 39,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 52,
+        "name": "Fundamentals of Electrical and Electronics Engineering",
+        "code": "ENEX101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19575,
+      "day_id": 3,
+      "period_id": 7,
+      "class_id": 1,
+      "subject_id": "BREAK",
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": null,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": null,
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19576,
+      "day_id": 3,
+      "period_id": 8,
+      "class_id": 1,
+      "subject_id": 47,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 2,
+      "lead_teacher_id": 53,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 47,
+        "name": "Engineering Physics",
+        "code": "ENSH102"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19577,
+      "day_id": 3,
+      "period_id": 10,
+      "class_id": 1,
+      "subject_id": "LC",
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": null,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": null,
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19578,
+      "day_id": 4,
+      "period_id": 5,
+      "class_id": 1,
+      "subject_id": "BREAK",
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": null,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": null,
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19579,
+      "day_id": 4,
+      "period_id": 6,
+      "class_id": 1,
+      "subject_id": 47,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": 52,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 47,
+        "name": "Engineering Physics",
+        "code": "ENSH102"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19580,
+      "day_id": 4,
+      "period_id": 7,
+      "class_id": 1,
+      "subject_id": 107,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": 19,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 107,
+        "name": "Engineering Mathematics I",
+        "code": "ENSH101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19581,
+      "day_id": 4,
+      "period_id": 8,
+      "class_id": 1,
+      "subject_id": "BREAK",
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": null,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": null,
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19582,
+      "day_id": 4,
+      "period_id": 9,
+      "class_id": 1,
+      "subject_id": 109,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 2,
+      "lead_teacher_id": 31,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 109,
+        "name": "Computer Programming ",
+        "code": "ENCT101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19583,
+      "day_id": 5,
+      "period_id": 1,
+      "class_id": 1,
+      "subject_id": 107,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 2,
+      "lead_teacher_id": 51,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 107,
+        "name": "Engineering Mathematics I",
+        "code": "ENSH101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19584,
+      "day_id": 5,
+      "period_id": 3,
+      "class_id": 1,
+      "subject_id": 109,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 2,
+      "lead_teacher_id": 31,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 109,
+        "name": "Computer Programming ",
+        "code": "ENCT101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19585,
+      "day_id": 5,
+      "period_id": 5,
+      "class_id": 1,
+      "subject_id": "BREAK",
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": null,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": null,
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19586,
+      "day_id": 5,
+      "period_id": 6,
+      "class_id": 1,
+      "subject_id": 52,
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": 39,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": {
+        "id": 52,
+        "name": "Fundamentals of Electrical and Electronics Engineering",
+        "code": "ENEX101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      }
+    },
+    {
+      "id": 19587,
+      "day_id": 5,
+      "period_id": 7,
+      "class_id": 1,
+      "subject_id": 109,
+      "is_lab": true,
+      "is_half_lab": false,
+      "num_periods": 4,
+      "lead_teacher_id": 31,
+      "assist_teacher_1_id": 81,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": "Z",
+      "lab_room": "COMP-IV",
+      "lab_group_id": "lab-5-7-1762741783834",
+      "subject": {
+        "id": 109,
+        "name": "Computer Programming ",
+        "code": "ENCT101"
+      },
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
+        }
+      },
+      "lab_subjects": [
+        {
+          "subject_id": 109,
+          "lead_teacher_id": 31,
+          "assist_teacher_1_id": 81,
+          "assist_teacher_2_id": null,
+          "group": "Z",
+          "lab_room": "COMP-IV",
+          "is_half_lab": false,
+          "num_periods": 4
+        },
+        {
+          "subject_id": 41,
+          "lead_teacher_id": 49,
+          "assist_teacher_1_id": 56,
+          "assist_teacher_2_id": null,
+          "group": "Y",
+          "lab_room": "A-103",
+          "is_half_lab": false,
+          "num_periods": 4
+        }
+      ]
+    },
+    {
+      "id": 19589,
+      "day_id": 1,
+      "period_id": 4,
+      "class_id": 1,
+      "subject_id": "BREAK",
+      "is_lab": false,
+      "is_half_lab": false,
+      "num_periods": 1,
+      "lead_teacher_id": null,
+      "assist_teacher_1_id": null,
+      "assist_teacher_2_id": null,
+      "assist_teacher_3_id": null,
+      "group": null,
+      "lab_room": null,
+      "lab_group_id": null,
+      "subject": null,
+      "class": {
+        "id": 1,
+        "name": "BCT-A I/I ",
+        "section": "A",
+        "room_no": "A-101",
+        "programme": {
+          "code": "BCT",
+          "name": "Computer Engineering "
+        },
+        "semester": {
+          "name": "BCT I/I"
         }
       }
     }
